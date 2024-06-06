@@ -1,8 +1,10 @@
 import fs from 'fs'
+import path from 'path'
 import express from 'express'
 import cors from 'cors'
+import { cwd } from 'process'
 
-const data = fs.readFileSync(process.cwd() + '/database.json')
+const data = fs.readFileSync(path.join(process.cwd(), 'database.json'))
 
 const app = express()
 
