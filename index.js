@@ -11,7 +11,9 @@ app.use(express.static('public'))
 app.use(cors())
 
 app.get('/', (req, res) => {
-  res.send('hai')
+  res.send(process.cwd())
 })
 
-app.listen(3000, () => console.log('server run!!!'))
+app.listen(3000, () => console.log(process.cwd()))
+
+
