@@ -6,8 +6,8 @@ import { cwd } from 'process'
 
 const data = fs.readFileSync(path.join(process.cwd(), 'database.json'), 'utf-8')
 
-const app = express()
 
+const app = express()
 app.use(express.json())
 app.use(express.static('public'))
 app.use(cors())
