@@ -4,7 +4,7 @@ import express from 'express'
 import cors from 'cors'
 import { cwd } from 'process'
 
-const data = fs.readFileSync(path.join(process.cwd(), 'database.json'), 'utf-8')
+const data = fs.readFileSync(path.join(process.cwd(), '/src/models/database.json'), 'utf-8')
 
 
 const app = express()
